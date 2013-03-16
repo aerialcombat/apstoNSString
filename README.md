@@ -10,7 +10,6 @@ I wrote this so I can grab the message from APNS payload.
 
 You can use this in one of two ways.
 
-
 userInfo is the info from (void)application:didReceiveRemoteNotification:
 
 NSDictionary *aps = userInfo[@"aps"];
