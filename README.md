@@ -22,7 +22,7 @@ NSDictionary *alert = aps[@"alert"];
 //Get it straight from the Dictionary
 NSString *message = [NSString stringWithAlert:alert];
 
-2.
+2. 
 
 NSDictionary *aps = userInfo[@"aps"];
 NSDictionary *alert = aps[@"alert"];
