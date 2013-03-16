@@ -1,6 +1,5 @@
 //
 //  NSString+aps.m
-//  FrejusCommunitity
 //
 //  Created by DJ Kim on 10/12/12.
 //
