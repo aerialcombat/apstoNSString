@@ -15,7 +15,7 @@ userInfo is the info from (void)application:didReceiveRemoteNotification:
 
 1.
 
-//Pull 
+//Pull
 NSDictionary *aps = userInfo[@"aps"];
 NSDictionary *alert = aps[@"alert"];
 
