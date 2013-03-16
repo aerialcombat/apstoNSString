@@ -15,11 +15,10 @@ userInfo is the info from (void)application:didReceiveRemoteNotification:
 
 1.
 
-//Pull
+
 NSDictionary *aps = userInfo[@"aps"];
 NSDictionary *alert = aps[@"alert"];
 
-//Get it straight from the Dictionary
 NSString *message = [NSString stringWithAlert:alert];
 
 2. 
@@ -27,9 +26,7 @@ NSString *message = [NSString stringWithAlert:alert];
 NSDictionary *aps = userInfo[@"aps"];
 NSDictionary *alert = aps[@"alert"];
 
-//Or pull array and key first.
 NSArray *localizablearguments = alert[@"loc-args"];
 NSString *localizableKey = alert[@"loc-key"];
 
-//Then pulling them.
 NSString *message = [NSString stringWithArguments:localizablearguments forKey:localizableKey];
