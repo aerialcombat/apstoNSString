@@ -17,9 +17,10 @@ NSDictionary *aps = userInfo[@"aps"];
 NSDictionary *alert = aps[@"alert"];
 NSString *message = [NSString stringWithAlert:alert];
 
+
+
 NSDictionary *aps = userInfo[@"aps"];
 NSDictionary *alert = aps[@"alert"];
 NSArray *localizablearguments = alert[@"loc-args"];
 NSString *localizableKey = alert[@"loc-key"];
-
 NSString *message = [NSString stringWithArguments:localizablearguments forKey:localizableKey];
